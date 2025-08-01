@@ -8,38 +8,38 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">39,678</td><td></td><td></td></tr>
+<tr><th colspan="8">Amazon Suite</th></tr>
+<tr><td><a href="#t0">Amazon Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">38,431</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">runner.TestNGCucumberRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1751212827806</td><td rowspan="1">22829</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">runner.TestNGCucumberRunner</td><td><a href="#m1">runScenario</a></td><td rowspan="1">1751212812644</td><td rowspan="1">15157</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Amazon Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Amazon Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">runner.TestNGCucumberRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="2">1753371757699</td><td rowspan="2">18867</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">runner.TestNGCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User should be able to search for products and view relevant results&quot;</td><td>&quot;Amazon Product search&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.s-desktop-width-max span.a-color-state.a-text-bold&quot;}
-  (Session info: chrome=137.0.7151.122)
+<h2>Amazon Test</h2><h3 id="m0">runner.TestNGCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User should be able to search for products and view relevant results&quot;</td><td>&quot;Amazon Product search&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Search result mismatch! expected [true] but found [false]
+	at stepdefinitions.SearchSteps.the_search_results_page_should_display_relevant_items_for(SearchSteps.java:46)
+	at ✽.the serach results page should display relevant items for &quot;xyzproductnotexist&quot;(file:///C:/Users/ADMIN/git/amazon-cucumber-framework/src/test/resources/features/AmazonSearch.feature:7)
+... Removed 3 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">runner.TestNGCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User should be able to search for products and view relevant results&quot;</td><td>&quot;Amazon Product search&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#twotabsearchtextbox&quot;}
+  (Session info: chrome=138.0.7204.158)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.27&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4b59d5504ad80301affde14471677a4f, findElement {using=css selector, value=div.s-desktop-width-max span.a-color-state.a-text-bold}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.122, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\H.P\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59418}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59418/devtoo..., se:cdpVersion: 137.0.7151.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4b59d5504ad80301affde14471677a4f
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+Command: [6a4a16b6d731585495034e1b2886dc4e, findElement {value=twotabsearchtextbox, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51049}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51049/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a4a16b6d731585495034e1b2886dc4e
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at pages.SearchResultsPage.getSearchResultText(SearchResultsPage.java:26)
-	at stepdefinitions.SearchSteps.the_search_results_page_should_display_relevant_items_for(SearchSteps.java:44)
-	at ✽.the serach results page should display relevant items for &quot;xyzproductnotexist&quot;(file:///D:/BDD%20Cucumber%20Workspace/HybridAmazonFramework_Full/src/test/resources/features/AmazonSearch.feature:7)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">runner.TestNGCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User should be able to search for products and view relevant results&quot;</td><td>&quot;Amazon Product search&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at pages.AmazonHomePage.searchProduct(AmazonHomePage.java:18)
+	at stepdefinitions.SearchSteps.user_searches_for_using_search_bar(SearchSteps.java:32)
+	at ✽.user searches for &quot;headphones&quot; using search bar(file:///C:/Users/ADMIN/git/amazon-cucumber-framework/src/test/resources/features/AmazonSearch.feature:6)
+... Removed 4 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

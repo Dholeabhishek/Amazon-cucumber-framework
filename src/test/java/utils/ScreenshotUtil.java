@@ -14,14 +14,22 @@ import org.openqa.selenium.WebDriver;
 public class ScreenshotUtil {
 
     //  Method 1: Basic screenshot using FileUtils
-    public static String takeScreenshot(WebDriver driver, String name) {
+    @SuppressWarnings("unused")
+	public static String takeScreenshot(WebDriver driver, String name) {
         String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
         String screenshotPath = "screenshots/" + name + "_" + timeStamp + ".png";
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
         try {
+        	{
+                if (driver == null) {
+                    System.out.println("Driver is null, screenshot not taken.");
+                }
+        	
+        	
             FileUtils.copyFile(src, new File(screenshotPath));
-        } catch (IOException e) {
+        }
+        	} catch (IOException e) {
             e.printStackTrace();
         }
 
@@ -36,7 +44,8 @@ public class ScreenshotUtil {
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         File dest = new File(screenshotPath);
         try {
-            Files.createDirectories(dest.getParentFile().toPath());
+        	
+        	Files.createDirectories(dest.getParentFile().toPath());
             Files.copy(src.toPath(), dest.toPath());
         } catch (IOException e) {
             e.printStackTrace();
@@ -45,3 +54,10 @@ public class ScreenshotUtil {
         return screenshotPath;
     }
 }
+
+
+
+
+
+
+

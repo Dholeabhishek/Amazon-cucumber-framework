@@ -7,8 +7,14 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 	    features = "src/test/resources/features",
 	    glue = {"stepdefinitions", "hooks"},
-	    tags = "@smoke", // ✅ This avoids loading @OutlineSearch steps
-	    plugin = {"pretty", "html:target/cucumber-reports"},
+	    tags = "@smoke or @sanity", // ✅ This avoids loading @OutlineSearch steps
+	    		//tags = "@ExcelSearch",
+	    //plugin = {"pretty", "html:target/cucumber-reports"},
+	    //plugin = {"pretty", "html:target/cucumber-html-report.html"},
+	    		
+	    				 plugin = {"pretty", "html:target/cucumber-html-report.html"},
+	    		        
+	    		   
 	    monochrome = true
 	)
 

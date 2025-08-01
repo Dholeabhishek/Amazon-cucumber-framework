@@ -1,43 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-29T21:30:11 IST" name="Default suite" finished-at="2025-06-29T21:30:51 IST" duration-ms="39678">
+  <suite started-at="2025-07-24T21:12:18 IST" name="Amazon Suite" finished-at="2025-07-24T21:12:57 IST" duration-ms="38431">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGCucumberRunner@ed7f8b4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGCucumberRunner@6f53b8a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-06-29T21:30:11 IST" name="Default test" finished-at="2025-06-29T21:30:51 IST" duration-ms="39678">
+    <test started-at="2025-07-24T21:12:18 IST" name="Amazon Test" finished-at="2025-07-24T21:12:57 IST" duration-ms="38431">
       <class name="runner.TestNGCucumberRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestNGCucumberRunner@ed7f8b4]" started-at="2025-06-29T21:30:11 IST" name="setUpClass" finished-at="2025-06-29T21:30:12 IST" duration-ms="967" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestNGCucumberRunner@6f53b8a]" started-at="2025-07-24T21:12:18 IST" name="setUpClass" finished-at="2025-07-24T21:12:19 IST" duration-ms="864" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@66cd621b]]>
+                <![CDATA[org.testng.TestRunner@1ec22831]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGCucumberRunner@ed7f8b4]" started-at="2025-06-29T21:30:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-29T21:30:27 IST" duration-ms="15157" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User should be able to search for products and view relevant results"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Amazon Product search"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGCucumberRunner@ed7f8b4]" started-at="2025-06-29T21:30:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-29T21:30:50 IST" duration-ms="22829" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGCucumberRunner@6f53b8a]" started-at="2025-07-24T21:12:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-24T21:12:37 IST" duration-ms="17965" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -52,54 +36,85 @@
           </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"div.s-desktop-width-max span.a-color-state.a-text-bold"}
-  (Session info: chrome=137.0.7151.122)
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox"}
+  (Session info: chrome=138.0.7204.158)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.27'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4b59d5504ad80301affde14471677a4f, findElement {using=css selector, value=div.s-desktop-width-max span.a-color-state.a-text-bold}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.122, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\H.P\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59418}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59418/devtoo..., se:cdpVersion: 137.0.7151.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4b59d5504ad80301affde14471677a4f]]>
+Command: [6a4a16b6d731585495034e1b2886dc4e, findElement {value=twotabsearchtextbox, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51049}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51049/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a4a16b6d731585495034e1b2886dc4e]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.s-desktop-width-max span.a-color-state.a-text-bold"}
-  (Session info: chrome=137.0.7151.122)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox"}
+  (Session info: chrome=138.0.7204.158)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.27'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4b59d5504ad80301affde14471677a4f, findElement {using=css selector, value=div.s-desktop-width-max span.a-color-state.a-text-bold}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.122, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\H.P\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59418}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59418/devtoo..., se:cdpVersion: 137.0.7151.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4b59d5504ad80301affde14471677a4f
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+Command: [6a4a16b6d731585495034e1b2886dc4e, findElement {value=twotabsearchtextbox, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51049}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51049/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a4a16b6d731585495034e1b2886dc4e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at pages.SearchResultsPage.getSearchResultText(SearchResultsPage.java:26)
-at stepdefinitions.SearchSteps.the_search_results_page_should_display_relevant_items_for(SearchSteps.java:44)
-at ✽.the serach results page should display relevant items for "xyzproductnotexist"(file:///D:/BDD%20Cucumber%20Workspace/HybridAmazonFramework_Full/src/test/resources/features/AmazonSearch.feature:7)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at pages.AmazonHomePage.searchProduct(AmazonHomePage.java:18)
+at stepdefinitions.SearchSteps.user_searches_for_using_search_bar(SearchSteps.java:32)
+at ✽.user searches for "headphones" using search bar(file:///C:/Users/ADMIN/git/amazon-cucumber-framework/src/test/resources/features/AmazonSearch.feature:6)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestNGCucumberRunner@ed7f8b4]" started-at="2025-06-29T21:30:50 IST" name="tearDownClass" finished-at="2025-06-29T21:30:51 IST" duration-ms="630" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGCucumberRunner@6f53b8a]" started-at="2025-07-24T21:12:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-24T21:12:56 IST" duration-ms="18867" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should be able to search for products and view relevant results"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Amazon Product search"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Search result mismatch! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Search result mismatch! expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at stepdefinitions.SearchSteps.the_search_results_page_should_display_relevant_items_for(SearchSteps.java:46)
+at ✽.the serach results page should display relevant items for "xyzproductnotexist"(file:///C:/Users/ADMIN/git/amazon-cucumber-framework/src/test/resources/features/AmazonSearch.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestNGCucumberRunner@6f53b8a]" started-at="2025-07-24T21:12:56 IST" name="tearDownClass" finished-at="2025-07-24T21:12:57 IST" duration-ms="621" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runner.TestNGCucumberRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Amazon Test -->
+  </suite> <!-- Amazon Suite -->
 </testng-results>

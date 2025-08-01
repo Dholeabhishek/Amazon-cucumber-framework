@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -22,9 +23,20 @@ public class SearchResultsPage {
         this.driver = driver;
     }
 
+	/*
+	 * public String getSearchResultText() { return
+	 * driver.findElement(resultText).getText().replace("\"", "").trim(); }
+	 */
+    
     public String getSearchResultText() {
-        return driver.findElement(resultText).getText().replace("\"", "").trim();
+        try {
+            return driver.findElement(By.cssSelector("div.s-desktop-width-max span.a-color-state.a-text-bold")).getText();
+        } catch (NoSuchElementException e) {
+            return "No Results Found"; // Or handle accordingly
+        }
     }
+    
+    
 
     public String getPageTitle() {
         return driver.getTitle();

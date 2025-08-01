@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import utils.ConfigReader;
 
 import java.time.Duration;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 
@@ -33,7 +34,7 @@ public class BaseTest {
                 break;
 
             default:
-                System.out.println("❌ Invalid browser name in config.properties!");
+                System.out.println("â�Œ Invalid browser name in config.properties!");
                 throw new RuntimeException("Unsupported browser");
         }
 
