@@ -115,22 +115,19 @@ Data-Driven	Apache POI (Excel support)
 VCS	Git + GitHub
 
 👨‍💻 Author
-👤 Name: Arpan Bhattacharyya
+👤 Name: Abhishek Dhole
 
-🌐 GitHub: CodeAvenger100
+🌐 GitHub: Dholeabhishek
 
-📧 Email: arpan.bhattacharyya0508@gmail.com
-🔗 LinkedIn: linkedin.com/in/arpan-bhattacharyyakolkata
+📧 Email: Dholeabhishek9@gmail.com
+🔗 LinkedIn: www.linkedin.com/in/abhishek-dhole-723001129
 
 🔮 Future Enhancements
+
 ✅ JSON Data Support
-
 ✅ Allure Reporting Integration
-
 ✅ Jenkins CI/CD Pipeline
-
 ✅ Docker Grid Execution Support
-
 ✅ Page Factory / Fluent Wait Refactor
 
 
